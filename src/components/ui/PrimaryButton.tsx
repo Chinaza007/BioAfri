@@ -15,11 +15,11 @@ export function PrimaryButton({
   className = '',
 }: PrimaryButtonProps) {
   const base =
-    'group inline-flex items-center gap-2 rounded-xl px-7 py-4 text-base font-semibold transition-all duration-300 hover:-translate-y-0.5'
+    'btn-accent group inline-flex gap-2 px-7 py-4 text-base'
   const styleByVariant = {
-    solid: 'bg-brand-700 text-white hover:bg-brand-800',
-    outline: 'border-2 border-white/40 text-white hover:bg-white/10',
-    light: 'bg-white text-brand-700 shadow-lg hover:shadow-2xl',
+    solid: '',
+    outline: '',
+    light: 'shadow-lg hover:shadow-2xl',
   }
 
   return (

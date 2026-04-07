@@ -25,7 +25,7 @@ export function ServicesSection() {
                 index % 2 === 0 ? 'bg-slate-50' : 'bg-white'
               }`}
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-green-100 to-green-200 font-bold text-brand-700 transition-transform duration-300 group-hover:scale-110">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-100 to-accent font-bold text-brand-700 transition-transform duration-300 group-hover:scale-110">
                 {item.icon}
               </div>
               <h3 className="font-semibold text-brand-800">{item.title}</h3>

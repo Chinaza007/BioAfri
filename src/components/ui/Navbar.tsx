@@ -80,7 +80,7 @@ export function Navbar() {
           ))}
           <Link
             to="/contact"
-            className="ml-2 rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-800"
+            className="btn-accent ml-2 px-4 py-2"
           >
             Contact Us
           </Link>
@@ -117,7 +117,7 @@ export function Navbar() {
           <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="mt-1 inline-flex items-center justify-center rounded-xl bg-brand-700 px-4 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-brand-800"
+            className="btn-accent mt-1 px-4 py-3"
           >
             Contact Us
           </Link>

@@ -13,12 +13,12 @@ export function CtaSection() {
             tech transfer, legal advisory, research excellence, and human capital development.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/contact" className="rounded-md bg-accent px-5 py-3 text-sm font-semibold text-brand-800">
+            <Link to="/contact" className="btn-accent rounded-md px-5 py-3">
               Book a Consultation
             </Link>
             <Link
               to="/resources"
-              className="rounded-md border border-brand-200 px-5 py-3 text-sm font-semibold text-white"
+              className="btn-accent rounded-md px-5 py-3"
             >
               Explore Resources
             </Link>

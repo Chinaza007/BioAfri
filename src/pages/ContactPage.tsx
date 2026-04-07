@@ -57,7 +57,7 @@ export function ContactPage() {
             </label>
             <button
               type="submit"
-              className="rounded-xl bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800 md:col-span-2 md:w-fit"
+              className="btn-accent md:col-span-2 md:w-fit"
             >
               Send Inquiry
             </button>

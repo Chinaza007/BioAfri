@@ -17,12 +17,12 @@ export function HeroSection() {
 
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:px-8 md:py-20">
         <div>
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-green-100">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-green-300" />
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-brand-100">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-accent" />
             Translating Knowledge into Value
           </div>
           <h1 className="text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-            Where Innovation Meets <span className="bg-gradient-to-r from-green-200 to-green-100 bg-clip-text text-transparent">Strategic Growth</span>
+            Where Innovation Meets <span className="bg-gradient-to-r from-accent to-brand-100 bg-clip-text text-transparent">Strategic Growth</span>
           </h1>
           <p className="mt-5 max-w-2xl text-base text-white/90 sm:text-lg">
             BioAfri-Connect empowers organisations and individuals to navigate the knowledge
@@ -46,7 +46,7 @@ export function HeroSection() {
                 {index > 0 && <div className="hidden h-8 w-px bg-white/20 sm:block" />}
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">{item.value}</div>
-                  <div className="text-sm text-green-100">{item.label}</div>
+                  <div className="text-sm text-brand-100">{item.label}</div>
                 </div>
               </div>
             ))}
@@ -55,7 +55,7 @@ export function HeroSection() {
       </div>
       <a
         href="#services"
-        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-1 text-green-200 transition-colors hover:text-white"
+        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-1 text-brand-100 transition-colors hover:text-white"
         aria-label="Scroll down"
       >
         <span className="text-xs font-medium">Scroll</span>
