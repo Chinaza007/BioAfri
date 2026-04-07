@@ -1,15 +1,17 @@
 import { services } from '../data/siteData'
 import { Card } from '../components/ui/Card'
+import { PageHero } from '../components/ui/PageHero'
+import { PrimaryButton } from '../components/ui/PrimaryButton'
 
 export function ServicesPage() {
   return (
-    <section className="bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
-        <h1 className="text-4xl font-bold text-brand-700 md:text-5xl">Services</h1>
-        <p className="mt-4 max-w-3xl text-neutral">
-          Comprehensive, integrated service offerings across commercialization, agriculture, and
-          human-capital development.
-        </p>
+    <>
+      <PageHero
+        title="Services"
+        description="Comprehensive, integrated service offerings across commercialization, agriculture, and human-capital development."
+      />
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
             <Card key={service.title}>
@@ -25,7 +27,11 @@ export function ServicesPage() {
             </Card>
           ))}
         </div>
-      </div>
-    </section>
+          <div className="mt-10 flex justify-center md:justify-start">
+            <PrimaryButton href="/contact">Discuss Your Service Needs</PrimaryButton>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

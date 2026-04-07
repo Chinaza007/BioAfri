@@ -1,4 +1,5 @@
 import { Card } from '../components/ui/Card'
+import { PageHero } from '../components/ui/PageHero'
 
 const trainingAreas = [
   'Innovation and entrepreneurship',
@@ -9,13 +10,13 @@ const trainingAreas = [
 
 export function TrainingPage() {
   return (
-    <section className="bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
-        <h1 className="text-4xl font-bold text-brand-700 md:text-5xl">Training</h1>
-        <p className="mt-4 max-w-3xl text-neutral">
-          Bespoke capability-building programs designed to help institutions and teams thrive in
-          innovation-focused environments.
-        </p>
+    <>
+      <PageHero
+        title="Training"
+        description="Bespoke capability-building programs designed to help institutions and teams thrive in innovation-focused environments."
+      />
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {trainingAreas.map((area) => (
             <Card key={area}>
@@ -27,7 +28,8 @@ export function TrainingPage() {
             </Card>
           ))}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   )
 }

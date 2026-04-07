@@ -1,4 +1,5 @@
 import { Card } from '../components/ui/Card'
+import { PageHero } from '../components/ui/PageHero'
 
 const projectThemes = [
   'Technology commercialization pipelines',
@@ -9,13 +10,13 @@ const projectThemes = [
 
 export function ProjectsPage() {
   return (
-    <section className="bg-slate-50">
-      <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
-        <h1 className="text-4xl font-bold text-brand-700 md:text-5xl">Projects</h1>
-        <p className="mt-4 max-w-3xl text-neutral">
-          Our projects combine legal precision, technical innovation, and market strategy to
-          generate long-term value.
-        </p>
+    <>
+      <PageHero
+        title="Projects"
+        description="Our projects combine legal precision, technical innovation, and market strategy to generate long-term value."
+      />
+      <section className="bg-slate-50">
+        <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {projectThemes.map((theme) => (
             <Card key={theme}>
@@ -27,7 +28,8 @@ export function ProjectsPage() {
             </Card>
           ))}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   )
 }
