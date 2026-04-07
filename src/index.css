@@ -20,3 +20,110 @@ body {
     linear-gradient(135deg, rgba(216, 198, 162, 0.14), rgba(142, 142, 142, 0.08));
   background-size: 40px 40px, 100% 100%;
 }
+
+@keyframes route-loader-spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes route-loader-spin-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes route-loader-orbit {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(0.995);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.015);
+  }
+}
+
+@keyframes route-loader-breathe {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes route-loader-pulse-ring {
+  0%,
+  100% {
+    opacity: 0.28;
+    transform: scale(0.98);
+    box-shadow: 0 0 0 rgba(216, 198, 162, 0);
+  }
+
+  50% {
+    opacity: 0.92;
+    transform: scale(1.03);
+    box-shadow: 0 0 26px rgba(216, 198, 162, 0.18);
+  }
+}
+
+@keyframes route-loader-node {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.85);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 18px currentColor;
+  }
+}
+
+.route-loader-spin-slow {
+  animation: route-loader-spin-slow 10s linear infinite;
+}
+
+.route-loader-spin-reverse {
+  animation: route-loader-spin-reverse 13s linear infinite;
+}
+
+.route-loader-orbit {
+  animation: route-loader-orbit 7.8s linear infinite;
+}
+
+.route-loader-breathe {
+  animation: route-loader-breathe 3.4s ease-in-out infinite;
+}
+
+.route-loader-breathe-delayed {
+  animation: route-loader-breathe 3.4s ease-in-out infinite;
+  animation-delay: -1.7s;
+}
+
+.route-loader-pulse-ring {
+  animation: route-loader-pulse-ring 2.1s ease-in-out infinite;
+}
+
+.route-loader-node {
+  animation: route-loader-node 1.9s ease-in-out infinite;
+}
+
+.route-loader-node-delayed {
+  animation-delay: -0.95s;
+}

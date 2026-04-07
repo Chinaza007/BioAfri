@@ -3,7 +3,7 @@ import { services } from '../../data/siteData'
 import { Card } from '../ui/Card'
 import { PrimaryButton } from '../ui/PrimaryButton'
 import { SectionHeader } from '../ui/SectionHeader'
-import { Link } from 'react-router-dom'
+import { TransitionLink } from '../ui/TransitionLink'
 
 export function ServicesSection() {
   return (
@@ -38,13 +38,13 @@ export function ServicesSection() {
                   </li>
                 ))}
               </ul>
-              <Link
+              <TransitionLink
                 to={`/services#${item.id}`}
                 className="group/link mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 transition-colors hover:text-brand-900"
               >
                 Learn more
                 <ArrowRight size={16} className="transition-transform duration-300 group-hover/link:translate-x-1" />
-              </Link>
+              </TransitionLink>
             </Card>
           ))}
         </div>

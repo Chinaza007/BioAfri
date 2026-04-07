@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { Link } from 'react-router-dom'
+import { TransitionLink } from './TransitionLink'
 
 type PrimaryButtonProps = {
   href: string
@@ -36,9 +36,9 @@ export function PrimaryButton({
   }
 
   return (
-    <Link to={href} className={`${base} ${styleByVariant[variant]} ${className}`}>
+    <TransitionLink to={href} className={`${base} ${styleByVariant[variant]} ${className}`}>
       {children}
       <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
-    </Link>
+    </TransitionLink>
   )
 }

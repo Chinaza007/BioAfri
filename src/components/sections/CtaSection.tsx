@@ -1,5 +1,5 @@
 import { HoneycombPattern } from '../ui/HoneycombPattern'
-import { Link } from 'react-router-dom'
+import { TransitionLink } from '../ui/TransitionLink'
 
 export function CtaSection() {
   return (
@@ -13,15 +13,15 @@ export function CtaSection() {
             tech transfer, legal advisory, research excellence, and human capital development.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/contact" className="btn-accent rounded-md px-5 py-3">
+            <TransitionLink to="/contact" className="btn-accent rounded-md px-5 py-3">
               Book a Consultation
-            </Link>
-            <Link
+            </TransitionLink>
+            <TransitionLink
               to="/resources"
               className="btn-accent rounded-md px-5 py-3"
             >
               Explore Resources
-            </Link>
+            </TransitionLink>
           </div>
         </div>
       </div>

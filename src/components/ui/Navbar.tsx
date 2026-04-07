@@ -1,7 +1,8 @@
 import { BrandLogo } from './BrandLogo'
 import { Menu, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+import { TransitionLink } from './TransitionLink'
 
 const links = [
   { label: 'Home', href: '/' },
@@ -45,12 +46,12 @@ export function Navbar() {
   }, [activeHref])
 
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-100/80 bg-white/85 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-brand-100/80 bg-white/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8">
-        <Link to="/" className="flex items-center gap-3 text-lg font-bold text-brand-700">
+        <TransitionLink to="/" className="flex items-center gap-3 text-lg font-bold text-brand-700">
           <BrandLogo variant="lightBg" />
           <span className="hidden sm:inline">BioAfri-Connect</span>
-        </Link>
+        </TransitionLink>
         <nav ref={navRef} className="relative hidden items-center gap-1 md:flex">
           <span
             aria-hidden="true"
@@ -62,7 +63,7 @@ export function Navbar() {
             }}
           />
           {links.map((link) => (
-            <Link
+            <TransitionLink
               key={link.label}
               to={link.href}
               className={`rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 ${
@@ -72,7 +73,7 @@ export function Navbar() {
               }`}
             >
               {link.label}
-            </Link>
+            </TransitionLink>
           ))}
         </nav>
         <button
@@ -91,7 +92,7 @@ export function Navbar() {
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3">
           {links.map((link) => (
-            <Link
+            <TransitionLink
               key={link.label}
               to={link.href}
               onClick={() => setIsOpen(false)}
@@ -102,7 +103,7 @@ export function Navbar() {
               }`}
             >
               {link.label}
-            </Link>
+            </TransitionLink>
           ))}
         </nav>
       </div>
