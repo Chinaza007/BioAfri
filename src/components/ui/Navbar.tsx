@@ -16,13 +16,9 @@ const links = [
 export function Navbar() {
   const location = useLocation()
   const [isOpen, setIsOpen] = useState(false)
-  const [activeHref, setActiveHref] = useState(location.pathname || '/')
+  const activeHref = location.pathname || '/'
   const navRef = useRef<HTMLElement | null>(null)
   const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0, opacity: 0 })
-
-  useEffect(() => {
-    setActiveHref(location.pathname || '/')
-  }, [location.pathname])
 
   useEffect(() => {
     const updateIndicator = () => {

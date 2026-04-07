@@ -1,6 +1,10 @@
+import type { EditorialVisualVariant } from '../types/visuals'
+
 export type ServiceItem = {
+  id: string
   title: string
   icon: string
+  visual: EditorialVisualVariant
   points: string[]
 }
 
@@ -12,8 +16,10 @@ export const heroStats = [
 
 export const services: ServiceItem[] = [
   {
+    id: 'tech-transfer-innovation',
     title: 'Tech Transfer & Innovation Commercialization',
     icon: 'IP',
+    visual: 'commercialization',
     points: [
       'IP identification and commercial potential assessment',
       'Patent and IP strategy development',
@@ -22,8 +28,10 @@ export const services: ServiceItem[] = [
     ],
   },
   {
+    id: 'agriculture-food-systems',
     title: 'Agriculture and Food Systems',
     icon: 'AG',
+    visual: 'agriculture',
     points: [
       'Agricultural commodity market and supply chain services',
       'Product development and commercialization lifecycle support',
@@ -32,8 +40,10 @@ export const services: ServiceItem[] = [
     ],
   },
   {
+    id: 'human-development-training',
     title: 'Human Development Consultancy & Training',
     icon: 'HD',
+    visual: 'training',
     points: [
       'Innovation and entrepreneurship training programs',
       'IP management and commercialization training',

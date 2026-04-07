@@ -3,6 +3,7 @@ import { services } from '../../data/siteData'
 import { Card } from '../ui/Card'
 import { PrimaryButton } from '../ui/PrimaryButton'
 import { SectionHeader } from '../ui/SectionHeader'
+import { Link } from 'react-router-dom'
 
 export function ServicesSection() {
   return (
@@ -37,18 +38,18 @@ export function ServicesSection() {
                   </li>
                 ))}
               </ul>
-              <a
-                href="/resources"
+              <Link
+                to={`/services#${item.id}`}
                 className="group/link mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 transition-colors hover:text-brand-900"
               >
                 Learn more
                 <ArrowRight size={16} className="transition-transform duration-300 group-hover/link:translate-x-1" />
-              </a>
+              </Link>
             </Card>
           ))}
         </div>
         <div className="mt-12 flex justify-center md:justify-start">
-          <PrimaryButton href="/resources" className="justify-center">
+          <PrimaryButton href="/services" className="justify-center">
             View All Services
           </PrimaryButton>
         </div>

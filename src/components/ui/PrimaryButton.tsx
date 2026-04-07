@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 
 type PrimaryButtonProps = {
   href: string
@@ -22,10 +23,22 @@ export function PrimaryButton({
     light: 'shadow-lg hover:shadow-2xl',
   }
 
+  const isExternal = href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:')
+  const isAnchor = href.startsWith('#')
+
+  if (isExternal || isAnchor) {
+    return (
+      <a href={href} className={`${base} ${styleByVariant[variant]} ${className}`}>
+        {children}
+        <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+      </a>
+    )
+  }
+
   return (
-    <a href={href} className={`${base} ${styleByVariant[variant]} ${className}`}>
+    <Link to={href} className={`${base} ${styleByVariant[variant]} ${className}`}>
       {children}
       <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
-    </a>
+    </Link>
   )
 }

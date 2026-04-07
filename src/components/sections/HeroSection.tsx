@@ -1,4 +1,4 @@
-import { HoneycombPattern } from '../ui/HoneycombPattern'
+import { BrandBackdrop } from '../ui/BrandBackdrop'
 import { ChevronDown } from 'lucide-react'
 import { PrimaryButton } from '../ui/PrimaryButton'
 import { heroStats } from '../../data/siteData'
@@ -9,13 +9,9 @@ export function HeroSection() {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-brand-900 via-brand-700 to-brand-500 text-white"
     >
-      <HoneycombPattern className="text-brand-100" />
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -right-24 -top-24 h-[520px] w-[520px] rounded-full bg-brand-200/20 blur-3xl" />
-        <div className="absolute -bottom-32 -left-24 h-[420px] w-[420px] rounded-full bg-accent/20 blur-3xl" />
-      </div>
+      <BrandBackdrop />
 
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:px-8 md:py-20">
+      <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:px-8 md:py-20">
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-brand-100">
             <span className="h-2 w-2 animate-pulse rounded-full bg-accent" />
