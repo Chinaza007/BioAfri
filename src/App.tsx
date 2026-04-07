@@ -1,32 +1,29 @@
-import { AboutSection } from './components/sections/AboutSection'
-import { CtaSection } from './components/sections/CtaSection'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { Footer } from './components/sections/Footer'
-import { HeroSection } from './components/sections/HeroSection'
-import { PageSection } from './components/sections/PageSection'
-import { ProfileHighlightsSection } from './components/sections/ProfileHighlightsSection'
-import { ServicesSection } from './components/sections/ServicesSection'
 import { Navbar } from './components/ui/Navbar'
+import { AboutPage } from './pages/AboutPage'
+import { ContactPage } from './pages/ContactPage'
+import { HomePage } from './pages/HomePage'
+import { ProjectsPage } from './pages/ProjectsPage'
+import { ResourcesPage } from './pages/ResourcesPage'
+import { ServicesPage } from './pages/ServicesPage'
+import { TrainingPage } from './pages/TrainingPage'
 
 export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main>
-        <HeroSection />
-        <ServicesSection />
-        <AboutSection />
-        <ProfileHighlightsSection />
-        <PageSection
-          id="training"
-          title="Training"
-          description="We design bespoke learning programs in innovation, entrepreneurship, IP management, leadership development, and digital-age skills for high-impact teams."
-        />
-        <PageSection
-          id="resources"
-          title="Resources"
-          description="Explore practical guides and thought leadership designed to help institutions transform ideas into impact and sustain long-term growth."
-        />
-        <CtaSection />
+      <main className="min-h-[70vh]">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/training" element={<TrainingPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
       <Footer />
     </div>

@@ -17,7 +17,7 @@ export function ServicesSection() {
           }
           description="We provide integrated legal, technical, research, and human-capital solutions that translate knowledge into measurable value."
         />
-        <div className="mt-8 grid gap-4 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {services.map((item, index) => (
             <Card
               key={item.title}
@@ -47,8 +47,10 @@ export function ServicesSection() {
             </Card>
           ))}
         </div>
-        <div className="mt-12">
-          <PrimaryButton href="#resources">View All Services</PrimaryButton>
+        <div className="mt-12 flex justify-center md:justify-start">
+          <PrimaryButton href="#resources" className="justify-center">
+            View All Services
+          </PrimaryButton>
         </div>
       </div>
     </section>

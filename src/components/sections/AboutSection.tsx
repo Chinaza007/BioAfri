@@ -11,7 +11,7 @@ export function AboutSection() {
           title={<span className="text-brand-700">A Firm Built at the Nexus of Knowledge</span>}
           description="BioAfri-Connect is a dynamic and multifaceted firm at the nexus of tech innovation, legal expertise, research excellence, and human potential. We empower organizations and individuals to navigate the complexities of the modern knowledge economy."
         />
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           <Card>
             <h3 className="font-semibold text-brand-800">Vision</h3>
             <p className="mt-2 text-sm text-neutral">

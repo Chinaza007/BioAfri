@@ -1,4 +1,5 @@
 import { BrandLogo } from '../ui/BrandLogo'
+import { Link } from 'react-router-dom'
 
 export function Footer() {
   return (
@@ -9,15 +10,15 @@ export function Footer() {
           <p>© {new Date().getFullYear()} BioAfri Connect. All rights reserved.</p>
         </div>
         <div className="flex gap-4">
-          <a href="#contact" className="hover:text-accent">
+          <Link to="/contact" className="hover:text-accent">
             WhatsApp
-          </a>
-          <a href="#contact" className="hover:text-accent">
+          </Link>
+          <Link to="/contact" className="hover:text-accent">
             Email
-          </a>
-          <a href="#contact" className="hover:text-accent">
+          </Link>
+          <Link to="/contact" className="hover:text-accent">
             Call
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

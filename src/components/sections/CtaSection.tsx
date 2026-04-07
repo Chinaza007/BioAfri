@@ -1,4 +1,5 @@
 import { HoneycombPattern } from '../ui/HoneycombPattern'
+import { Link } from 'react-router-dom'
 
 export function CtaSection() {
   return (
@@ -15,12 +16,12 @@ export function CtaSection() {
             <a href="mailto:hello@bioafri-connect.com" className="rounded-md bg-accent px-5 py-3 text-sm font-semibold text-brand-800">
               Book Discovery Call
             </a>
-            <a
-              href="#resources"
+            <Link
+              to="/resources"
               className="rounded-md border border-brand-200 px-5 py-3 text-sm font-semibold text-white"
             >
               Download Proposal
-            </a>
+            </Link>
           </div>
         </div>
       </div>
