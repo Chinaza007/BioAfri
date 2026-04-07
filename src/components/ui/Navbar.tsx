@@ -78,12 +78,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/contact"
-            className="btn-accent ml-2 px-4 py-2"
-          >
-            Contact Us
-          </Link>
         </nav>
         <button
           type="button"
@@ -114,13 +108,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/contact"
-            onClick={() => setIsOpen(false)}
-            className="btn-accent mt-1 px-4 py-3"
-          >
-            Contact Us
-          </Link>
         </nav>
       </div>
     </header>

@@ -33,7 +33,7 @@ export function HeroSection() {
             <PrimaryButton href="#services" variant="light" className="justify-center sm:justify-start">
               Explore Our Services
             </PrimaryButton>
-            <PrimaryButton href="#contact" variant="outline" className="justify-center sm:justify-start">
+            <PrimaryButton href="/contact" variant="outline" className="justify-center sm:justify-start">
               Partner With Us
             </PrimaryButton>
           </div>

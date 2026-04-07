@@ -38,7 +38,7 @@ export function ServicesSection() {
                 ))}
               </ul>
               <a
-                href="#resources"
+                href="/resources"
                 className="group/link mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 transition-colors hover:text-brand-900"
               >
                 Learn more
@@ -48,7 +48,7 @@ export function ServicesSection() {
           ))}
         </div>
         <div className="mt-12 flex justify-center md:justify-start">
-          <PrimaryButton href="#resources" className="justify-center">
+          <PrimaryButton href="/resources" className="justify-center">
             View All Services
           </PrimaryButton>
         </div>
