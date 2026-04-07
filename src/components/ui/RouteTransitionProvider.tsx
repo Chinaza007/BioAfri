@@ -119,14 +119,13 @@ function RouteTransitionOverlay({
 
           <div className="mt-8">
             <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-brand-100/60">
-              Navigation Sequence
+             
             </p>
             <h2 className="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl">
               Opening {destination}
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-white/68 sm:text-[0.95rem]">
-              Loading the next BioAfri-Connect view with a focused transition across services,
-              research, legal, and training content.
+             
             </p>
           </div>
         </div>

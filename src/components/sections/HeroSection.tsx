@@ -2,6 +2,7 @@ import { BrandBackdrop } from '../ui/BrandBackdrop'
 import { ChevronDown } from 'lucide-react'
 import { PrimaryButton } from '../ui/PrimaryButton'
 import { heroStats } from '../../data/siteData'
+import { CountUpText } from '../ui/CountUpText'
 
 export function HeroSection() {
   return (
@@ -41,7 +42,13 @@ export function HeroSection() {
               <div key={item.label} className="flex items-center gap-4">
                 {index > 0 && <div className="hidden h-8 w-px bg-white/20 sm:block" />}
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white">{item.value}</div>
+                  <div className="text-3xl font-bold text-white">
+                    <CountUpText
+                      value={item.value}
+                      delayMs={index * 180}
+                      durationMs={index === 2 ? 1600 : 1300}
+                    />
+                  </div>
                   <div className="text-sm text-brand-100">{item.label}</div>
                 </div>
               </div>

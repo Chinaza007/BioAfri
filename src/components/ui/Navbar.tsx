@@ -48,7 +48,7 @@ export function Navbar() {
   }, [activeHref])
 
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-100/80 bg-white/88 shadow-[0_22px_48px_-40px_rgba(3,56,30,0.4)] backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-brand-100 bg-white shadow-[0_22px_48px_-40px_rgba(3,56,30,0.4)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8">
         <TransitionLink
           to="/"
@@ -70,7 +70,7 @@ export function Navbar() {
           <nav
             ref={navRef}
             aria-label="Primary navigation"
-            className="relative flex items-center gap-1 rounded-full border border-brand-100/90 bg-white/72 p-1 shadow-[0_18px_40px_-30px_rgba(3,56,30,0.34)] backdrop-blur-xl"
+            className="relative flex items-center gap-1 rounded-full border border-brand-100 bg-[#faf8f2] p-1 shadow-[0_18px_40px_-30px_rgba(3,56,30,0.34)]"
           >
             <span
               aria-hidden="true"
@@ -119,7 +119,7 @@ export function Navbar() {
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isOpen}
           aria-controls={mobileMenuId}
-          className="rounded-xl border border-brand-200 bg-white/80 p-2 text-brand-700 shadow-sm transition hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300 focus-visible:ring-offset-2 lg:hidden"
+          className="rounded-xl border border-brand-200 bg-white p-2 text-brand-700 shadow-sm transition hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300 focus-visible:ring-offset-2 lg:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -127,7 +127,7 @@ export function Navbar() {
       </div>
       <div
         id={mobileMenuId}
-        className={`overflow-hidden border-t border-brand-100 bg-white/95 transition-all duration-300 lg:hidden ${
+        className={`overflow-hidden border-t border-brand-100 bg-white transition-all duration-300 lg:hidden ${
           isOpen ? 'pointer-events-auto max-h-[420px] opacity-100' : 'pointer-events-none max-h-0 opacity-0'
         }`}
         aria-hidden={!isOpen}
