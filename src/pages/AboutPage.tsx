@@ -1,11 +1,12 @@
 import { EditorialVisual } from '../components/ui/EditorialVisual'
 import { AboutSection } from '../components/sections/AboutSection'
+import { LeadershipSection } from '../components/sections/LeadershipSection'
 import { ProfileHighlightsSection } from '../components/sections/ProfileHighlightsSection'
 
 const aboutHighlights = [
   'Commercialization strategy with cross-functional insight',
   'Sector fluency spanning innovation, agriculture, and training',
-  'Structured engagement model focused on measurable outcomes',
+  'Experienced governance and management leadership across key practice areas',
 ]
 
 export function AboutPage() {
@@ -18,8 +19,8 @@ export function AboutPage() {
               About BioAfri-Connect
             </h1>
             <p className="mt-4 max-w-2xl text-neutral">
-              Learn about our vision, mission, integrated approach, and why organizations trust us
-              to translate knowledge into measurable impact.
+              Learn about our vision, mission, integrated approach, and the leadership guiding
+              how BioAfri-Connect translates knowledge into measurable impact.
             </p>
             <div className="mt-8 space-y-3">
               {aboutHighlights.map((item) => (
@@ -34,13 +35,14 @@ export function AboutPage() {
             </div>
           </div>
           <EditorialVisual
-            variant="partnership"
-            ariaLabel="Illustrative placeholder visual representing BioAfri-Connect strategic collaboration and integrated advisory work"
+            variant="leadership"
+            ariaLabel="Illustrative placeholder visual representing BioAfri-Connect leadership, strategic collaboration, and integrated advisory work"
             className="min-h-[360px]"
           />
         </div>
       </section>
       <AboutSection />
+      <LeadershipSection />
       <ProfileHighlightsSection />
     </>
   )

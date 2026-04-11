@@ -7,7 +7,11 @@ import { TransitionLink } from '../ui/TransitionLink'
 
 export function ServicesSection() {
   return (
-    <section id="services" className="bg-white scroll-mt-20">
+    <section
+      id="services"
+      className="relative overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#fbfaf6_100%)] scroll-mt-20"
+    >
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-[radial-gradient(circle_at_top,rgba(216,198,162,0.16),transparent_68%)]" />
       <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
         <SectionHeader
           tag="What We Do"
@@ -22,8 +26,8 @@ export function ServicesSection() {
           {services.map((item, index) => (
             <Card
               key={item.title}
-              className={`group rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-xl ${
-                index % 2 === 0 ? 'bg-slate-50' : 'bg-white'
+              className={`group rounded-[24px] border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-xl ${
+                index % 2 === 0 ? 'bg-[#faf8f3]' : 'bg-white'
               }`}
             >
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-100 to-accent font-bold text-brand-700 transition-transform duration-300 group-hover:scale-110">
