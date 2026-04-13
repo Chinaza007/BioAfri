@@ -20,7 +20,7 @@ const focusAreas = [
 const contactChannels = [
   {
     label: 'WhatsApp',
-    href: 'https://wa.me/2340000000000',
+    href: 'https://wa.me/2348023318530',
     icon: MessageCircle,
     detail: 'Quick initial conversation',
     external: true,
