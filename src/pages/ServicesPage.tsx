@@ -18,7 +18,8 @@ export function ServicesPage() {
               <Card key={service.title} className="scroll-mt-24 flex flex-col" id={service.id}>
                 <EditorialVisual
                   variant={service.visual}
-                  ariaLabel={`Illustrative placeholder visual for ${service.title}`}
+                  image={service.image}
+                  ariaLabel={`Editorial visual representing ${service.title}`}
                   className="min-h-[230px]"
                 />
                 <h2 className="mt-6 text-xl font-semibold text-brand-800">{service.title}</h2>

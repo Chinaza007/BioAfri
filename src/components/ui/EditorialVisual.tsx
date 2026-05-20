@@ -13,6 +13,7 @@ import {
   Users,
 } from 'lucide-react'
 import { HoneycombPattern } from './HoneycombPattern'
+import type { EditorialImageAsset } from '../../data/editorialVisuals'
 import type { EditorialVisualVariant } from '../../types/visuals'
 
 type EditorialVisualProps = {
@@ -20,6 +21,7 @@ type EditorialVisualProps = {
   ariaLabel: string
   badge?: string
   className?: string
+  image?: EditorialImageAsset
 }
 
 type EditorialVisualTheme = {
@@ -130,11 +132,70 @@ export function EditorialVisual({
   ariaLabel,
   badge,
   className = '',
+  image,
 }: EditorialVisualProps) {
   const theme = themes[variant]
   const PrimaryIcon = theme.primaryIcon
   const SecondaryIcon = theme.secondaryIcon
   const TertiaryIcon = theme.tertiaryIcon
+
+  if (image) {
+    return (
+      <figure
+        role="img"
+        aria-label={ariaLabel}
+        className={`relative overflow-hidden rounded-[28px] border border-brand-100 bg-slate-950 text-white shadow-[0_24px_70px_-32px_rgba(3,56,30,0.65)] ${className}`}
+      >
+        <img
+          src={image.src}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          className={`absolute inset-0 h-full w-full ${
+            image.fit === 'contain' ? 'bg-white object-contain p-6' : 'object-cover'
+          }`}
+          style={{ objectPosition: image.position ?? 'center center' }}
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,31,18,0.06)_0%,rgba(3,31,18,0.18)_38%,rgba(3,31,18,0.84)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(216,198,162,0.16),transparent_24%),radial-gradient(circle_at_bottom_left,rgba(9,107,58,0.22),transparent_26%)]" />
+        <div className="pointer-events-none absolute inset-0 opacity-45 mix-blend-screen">
+          <HoneycombPattern className="text-brand-100/45" />
+        </div>
+
+        <div className="relative z-10 flex h-full min-h-[220px] flex-col justify-between p-5">
+          <span className="inline-flex w-fit items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-white/84 backdrop-blur-md">
+            {badge ?? theme.badge}
+          </span>
+
+          <div className="ml-auto max-w-[15rem] rounded-[24px] border border-white/14 bg-[rgba(3,21,13,0.56)] p-4 shadow-2xl backdrop-blur-md">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]">
+                <PrimaryIcon className="h-5 w-5 text-white" strokeWidth={1.8} />
+              </div>
+              <div className="flex h-9 w-9 items-center justify-center rounded-2xl border border-white/14 bg-white/10">
+                <SecondaryIcon className="h-4.5 w-4.5 text-white/92" strokeWidth={1.8} />
+              </div>
+              <div className="flex h-9 w-9 items-center justify-center rounded-2xl border border-white/14 bg-white/10">
+                <TertiaryIcon className="h-4.5 w-4.5 text-white/92" strokeWidth={1.8} />
+              </div>
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              {theme.metrics.map((metric) => (
+                <span
+                  key={metric}
+                  className="rounded-full border border-white/12 bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/78"
+                >
+                  {metric}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </figure>
+    )
+  }
 
   return (
     <figure

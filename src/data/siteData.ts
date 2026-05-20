@@ -1,3 +1,4 @@
+import { editorialImages, type EditorialImageAsset } from './editorialVisuals'
 import type { EditorialVisualVariant } from '../types/visuals'
 
 const sylvesterPortrait = new URL('../../images/Sylvester.png', import.meta.url).href
@@ -14,6 +15,7 @@ export type ServiceItem = {
   title: string
   icon: string
   visual: EditorialVisualVariant
+  image: EditorialImageAsset
   points: string[]
 }
 
@@ -120,6 +122,7 @@ export const services: ServiceItem[] = [
     title: 'Tech Transfer & Innovation Commercialization',
     icon: 'IP',
     visual: 'commercialization',
+    image: editorialImages.indoorPlantLab,
     points: [
       'IP identification and commercial potential assessment',
       'Patent and IP strategy development',
@@ -132,6 +135,7 @@ export const services: ServiceItem[] = [
     title: 'Agriculture and Food Systems',
     icon: 'AG',
     visual: 'agriculture',
+    image: editorialImages.farmerInField,
     points: [
       'Agricultural commodity market and supply chain services',
       'Product development and commercialization lifecycle support',
@@ -144,6 +148,7 @@ export const services: ServiceItem[] = [
     title: 'Human Development Consultancy & Training',
     icon: 'HD',
     visual: 'training',
+    image: editorialImages.advisoryRoundtable,
     points: [
       'Innovation and entrepreneurship training programs',
       'IP management and commercialization training',

@@ -2,6 +2,7 @@ import { EditorialVisual } from '../components/ui/EditorialVisual'
 import { AboutSection } from '../components/sections/AboutSection'
 import { LeadershipSection } from '../components/sections/LeadershipSection'
 import { ProfileHighlightsSection } from '../components/sections/ProfileHighlightsSection'
+import { editorialImages } from '../data/editorialVisuals'
 
 const aboutHighlights = [
   'Commercialization strategy with cross-functional insight',
@@ -36,7 +37,9 @@ export function AboutPage() {
           </div>
           <EditorialVisual
             variant="leadership"
-            ariaLabel="Illustrative placeholder visual representing BioAfri-Connect leadership, strategic collaboration, and integrated advisory work"
+            image={editorialImages.strategyHandshake}
+            badge="Leadership & Strategy"
+            ariaLabel="Editorial visual representing BioAfri-Connect leadership, strategic collaboration, and integrated advisory work"
             className="min-h-[360px]"
           />
         </div>

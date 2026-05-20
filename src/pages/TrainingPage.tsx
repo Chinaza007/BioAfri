@@ -1,5 +1,6 @@
 import { Card } from '../components/ui/Card'
 import { EditorialVisual } from '../components/ui/EditorialVisual'
+import { editorialImages, type EditorialImageAsset } from '../data/editorialVisuals'
 import { PageHero } from '../components/ui/PageHero'
 import type { EditorialVisualVariant } from '../types/visuals'
 
@@ -8,27 +9,36 @@ const trainingAreas = [
     title: 'Innovation and entrepreneurship',
     description:
       'Programs designed to help founders, researchers, and emerging teams shape ideas into practical, investment-ready opportunities.',
-    visual: 'training' as EditorialVisualVariant,
+    visual: 'training',
+    image: editorialImages.advisoryRoundtable,
   },
   {
     title: 'IP management and commercialization',
     description:
       'Applied workshops that connect protection strategy, valuation thinking, and commercialization decision-making.',
-    visual: 'commercialization' as EditorialVisualVariant,
+    visual: 'commercialization',
+    image: editorialImages.researchDesk,
   },
   {
     title: 'Leadership and R&D team development',
     description:
       'Capability-building experiences that strengthen team alignment, communication, and execution in innovation-led environments.',
-    visual: 'leadership' as EditorialVisualVariant,
+    visual: 'leadership',
+    image: editorialImages.strategyHandshake,
   },
   {
     title: 'Digital-age skills and workforce planning',
     description:
       'Practical development tracks focused on future-ready talent, adaptive learning systems, and organizational resilience.',
-    visual: 'projects' as EditorialVisualVariant,
+    visual: 'projects',
+    image: editorialImages.advisoryRoundtable,
   },
-]
+] satisfies Array<{
+  title: string
+  description: string
+  visual: EditorialVisualVariant
+  image: EditorialImageAsset
+}>
 
 export function TrainingPage() {
   return (
@@ -44,7 +54,8 @@ export function TrainingPage() {
               <Card key={area.title} className="flex flex-col">
                 <EditorialVisual
                   variant={area.visual}
-                  ariaLabel={`Illustrative placeholder visual for ${area.title}`}
+                  image={area.image}
+                  ariaLabel={`Editorial visual representing ${area.title}`}
                   className="min-h-[220px]"
                 />
                 <h2 className="mt-6 text-lg font-semibold text-brand-800">{area.title}</h2>
