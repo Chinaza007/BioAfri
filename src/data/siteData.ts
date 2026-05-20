@@ -2,8 +2,8 @@ import type { EditorialVisualVariant } from '../types/visuals'
 
 const sylvesterPortrait = new URL('../../images/Sylvester.png', import.meta.url).href
 const ngoziPortrait = new URL('../../images/Ngozi.png', import.meta.url).href
-const tejanPortrait = new URL('../../images/Tejan.png', import.meta.url).href
 const constancePortrait = new URL('../../images/constance.png', import.meta.url).href
+const kolloPortrait = new URL('../../images/kollo.png', import.meta.url).href
 const lydiaPortrait = new URL('../../images/lydia.png', import.meta.url).href
 const chiomaPortrait = new URL('../../images/chioma.png', import.meta.url).href
 const fortunePortrait = new URL('../../images/Fortune.jpg', import.meta.url).href
@@ -200,7 +200,7 @@ export const boardMembers: LeadershipProfile[] = [
   },
   {
     id: 'ngozi-uwannah',
-    name: 'Ngozi Uwannah',
+    name: 'Dr. Uwannah, Ngozi Caroline',
     role: 'Board Member',
     cardRole: 'Board',
     image: ngoziPortrait,
@@ -208,21 +208,18 @@ export const boardMembers: LeadershipProfile[] = [
     imagePosition: 'center 54%',
     imageScale: 1,
     preview:
-      'Board member profile details will be shared soon as the leadership directory is expanded.',
-    availabilityNote: 'Full profile update coming soon.',
-  },
-  {
-    id: 'tejan-cole',
-    name: 'Alhaji Tejan Cole',
-    role: 'Board Member',
-    cardRole: 'Board',
-    image: tejanPortrait,
-    imageFit: 'cover',
-    imagePosition: 'center 14%',
-    imageScale: 1.02,
-    preview:
-      'Board member profile details will be shared soon as the leadership directory is expanded.',
-    availabilityNote: 'Full profile update coming soon.',
+      'Dr. Uwannah is an Associate Professor and applied psychology expert with over 18 years of experience, contributing to organisational development, human capital strategy, and governance.',
+    expertise: [
+      'Applied psychology',
+      'Human capital development',
+      'Organisational behaviour',
+    ],
+    biography: [
+      'Dr. Uwannah is an Associate Professor in the Department of Education at Babcock University, Nigeria, with over 18 years of experience in teaching, research, and academic leadership. She brings deep expertise in applied psychology and human capital development, with a focus on workforce dynamics, organisational behaviour, and the interface between work, family, and productivity.',
+      'Her research advances understanding of workplace systems and personnel development, providing valuable insights relevant to organisational performance and sustainable development. She has an extensive publication record in local and international peer-reviewed journals in personnel and applied psychology.',
+      'Dr. Uwannah currently serves as Head of the Department of Education at Babcock University and is a Fellow of the Institute of Strategic Human Resource Management (ISHRM), Nigeria. She is also an active member of several academic and professional bodies, contributing to research, policy, and institutional development.',
+      'Her expertise strengthens the company\'s governance and advisory capacity, particularly in areas of human capital, organisational systems, and inclusive development.',
+    ],
   },
 ]
 
@@ -230,15 +227,46 @@ export const managementTeam: LeadershipProfile[] = [
   {
     id: 'constance-onyekachi',
     name: 'Constance Onyekachi',
-    role: 'CEO',
+    role: 'Chief Executive Officer',
     cardRole: 'CEO',
     image: constancePortrait,
     imageFit: 'contain',
     imagePosition: 'center 46%',
     imageScale: 1,
     preview:
-      'Executive profile details will be shared soon as the management directory is expanded.',
-    availabilityNote: 'Full executive profile update coming soon.',
+      'Constance is a legal and innovation leader with over 20 years of experience across governance, trade, and intellectual property, driving strategies that translate research and innovation into scalable impact across Africa.',
+    expertise: [
+      'Corporate governance',
+      'Regulatory strategy',
+      'Technology transfer',
+    ],
+    biography: [
+      'Constance Onyekachi is a distinguished executive and strategic leader who serves as the Chief Executive Officer of BioAfri-Connect. She commands over two decades of high-impact experience spanning institutional leadership, corporate governance, regulatory compliance, and innovation policy across the public and private sectors. At BioAfri-Connect, she spearheads the corporate mission to accelerate technology transfer, commercialise research, and drive sustainable development across Africa.',
+      'Prior to her appointment as CEO, Constance held vital senior executive roles, including General Manager, Company Secretary, and Head of Legal & Corporate Affairs at ProHealth HMO and the Nigeria Social Insurance Trust Fund. In these positions, she orchestrated enterprise-wide governance, risk management, and operational strategy initiatives that significantly enhanced institutional resilience and performance.',
+      'Constance specialises in competition law, intellectual property, international business law, and regulatory strategy, with a strong track record of turning research and institutional assets into scalable market solutions. As CEO, she focuses on strengthening governance, building innovation ecosystems, and driving sustainable growth across emerging and regulated sectors. She holds an LL.B, BL, and LL.M, and is pursuing an LL.D focused on competition, trade policy, innovation, and SME development. She brings deep insight into how legal and regulatory frameworks shape the commercialisation of science.',
+    ],
+  },
+  {
+    id: 'issoufou-abdourhamane',
+    name: 'Dr. Issoufou Kollo Abdourhamane',
+    role: 'Head, Bioeconomy, Agrifood Systems and Climate Change',
+    cardRole: 'Bioeconomy',
+    image: kolloPortrait,
+    imageFit: 'cover',
+    imagePosition: 'center 20%',
+    imageScale: 1.04,
+    preview:
+      'Dr. Issoufou is an agricultural scientist and international development expert with over 35 years of experience leading agricultural innovation, climate-resilient food systems, biotechnology, and regional agri-food transformation programmes across Africa.',
+    expertise: [
+      'Bioeconomy strategy',
+      'Climate-resilient agrifood systems',
+      'Agricultural biotechnology',
+    ],
+    biography: [
+      'Dr. Issoufou Kollo Abdourhamane is a distinguished agricultural scientist, research executive, and international development leader with more than 35 years of experience pioneering bioeconomy strategies, climate-resilient agrifood systems, and sustainable agricultural transformation across Africa. His career is defined by an ability to leverage agricultural biotechnology, advanced plant health systems, and innovative seed systems to strengthen food security, rural livelihoods, and environmental resilience on a continental scale.',
+      'An expert in navigating complex regulatory, scientific, and political landscapes, Dr. Abdourhamane has successfully directed multi-country research-for-development initiatives funded by major international donors, including USAID, the World Bank, the African Development Bank, and the Rockefeller Foundation. Notably, during his tenure as West Africa Representative and Project Manager for the African Agricultural Technology Foundation (AATF), he orchestrated the landmark Bt Cowpea Project across Nigeria, Ghana, and Burkina Faso. His strategic leadership was instrumental in achieving the historic regulatory approval and commercialisation of the pod borer-resistant (PBR) cowpea in Nigeria, a breakthrough that significantly reduced pesticide dependence, enhanced smallholder climate resilience, and transformed regional agrifood dynamics.',
+      'Dr. Abdourhamane holds a PhD in Phytopathology and Microbiology from Texas A&M University, with advanced specialisations in epidemiology, plant diagnostics, biotechnology, and statistical modelling. His extensive leadership background spans international agricultural research centers, regional organisations, and academic institutions, positioning him as a premier authority on driving science-based, climate-smart bioeconomies.',
+    ],
   },
   {
     id: 'lydia-anenga-arthur',
