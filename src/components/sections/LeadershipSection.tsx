@@ -50,6 +50,8 @@ function LeadershipPortrait({
             src={image}
             alt={`${name} portrait`}
             loading="lazy"
+            decoding="async"
+            fetchPriority="low"
             className={`absolute inset-[10px] h-[calc(100%-20px)] w-[calc(100%-20px)] rounded-[22px] ${
               imageFit === 'contain' ? 'object-contain p-3' : 'object-cover'
             }`}

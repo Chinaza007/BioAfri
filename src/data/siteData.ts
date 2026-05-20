@@ -1,14 +1,14 @@
 import { editorialImages, type EditorialImageAsset } from './editorialVisuals'
 import type { EditorialVisualVariant } from '../types/visuals'
 
-const sylvesterPortrait = new URL('../../images/Sylvester.png', import.meta.url).href
-const ngoziPortrait = new URL('../../images/Ngozi.png', import.meta.url).href
-const constancePortrait = new URL('../../images/constance.png', import.meta.url).href
+const sylvesterPortrait = new URL('../../images/Sylvester.jpg', import.meta.url).href
+const ngoziPortrait = new URL('../../images/Ngozi.jpg', import.meta.url).href
+const constancePortrait = new URL('../../images/constance.jpg', import.meta.url).href
 const kolloPortrait = new URL('../../images/kollo.png', import.meta.url).href
-const lydiaPortrait = new URL('../../images/lydia.png', import.meta.url).href
-const chiomaPortrait = new URL('../../images/chioma.png', import.meta.url).href
+const lydiaPortrait = new URL('../../images/lydia.jpg', import.meta.url).href
+const chiomaPortrait = new URL('../../images/chioma.jpg', import.meta.url).href
 const fortunePortrait = new URL('../../images/Fortune.jpg', import.meta.url).href
-const akanPortrait = new URL('../../images/Akan.png', import.meta.url).href
+const akanPortrait = new URL('../../images/Akan.jpg', import.meta.url).href
 
 export type ServiceItem = {
   id: string

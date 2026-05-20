@@ -148,10 +148,13 @@ export function EditorialVisual({
       >
         <img
           src={image.src}
+          srcSet={image.srcSet}
+          sizes={image.sizes}
           alt=""
           aria-hidden="true"
-          loading="lazy"
+          loading={image.loading ?? 'lazy'}
           decoding="async"
+          fetchPriority={image.fetchPriority ?? 'auto'}
           className={`absolute inset-0 h-full w-full ${
             image.fit === 'contain' ? 'bg-white object-contain p-6' : 'object-cover'
           }`}
