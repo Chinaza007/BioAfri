@@ -44,10 +44,13 @@ export function TrainingPage() {
   return (
     <>
       <PageHero
-        title="Training"
+        eyebrow="Capability Building"
+        title="Training Programs"
+        highlight="Programs"
         description="Bespoke capability-building programs designed to help institutions and teams thrive in innovation-focused environments."
+        scrollTarget="#training-content"
       />
-      <section className="bg-white">
+      <section id="training-content" className="scroll-mt-24 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {trainingAreas.map((area) => (

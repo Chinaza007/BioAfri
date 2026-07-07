@@ -44,10 +44,13 @@ export function ResourcesPage() {
   return (
     <>
       <PageHero
-        title="Resources"
+        eyebrow="Knowledge Assets"
+        title="Curated Resources"
+        highlight="Resources"
         description="Explore curated knowledge assets designed to support strategic decision-making and innovation execution."
+        scrollTarget="#resources-content"
       />
-      <section className="bg-slate-50">
+      <section id="resources-content" className="scroll-mt-24 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {resources.map((item) => (

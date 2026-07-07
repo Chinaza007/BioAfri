@@ -44,10 +44,13 @@ export function ProjectsPage() {
   return (
     <>
       <PageHero
-        title="Projects"
+        eyebrow="Impact In Action"
+        title="Featured Projects"
+        highlight="Projects"
         description="Our projects combine legal precision, technical innovation, and market strategy to generate long-term value."
+        scrollTarget="#projects-content"
       />
-      <section className="bg-slate-50">
+      <section id="projects-content" className="scroll-mt-24 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {projectThemes.map((theme) => (

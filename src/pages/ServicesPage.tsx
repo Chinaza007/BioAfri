@@ -8,10 +8,13 @@ export function ServicesPage() {
   return (
     <>
       <PageHero
-        title="Services"
+        eyebrow="Integrated Expertise"
+        title="Our Services"
+        highlight="Services"
         description="Comprehensive, integrated service offerings across tech transfer, agri-food systems, and human development consultancy."
+        scrollTarget="#services-content"
       />
-      <section className="bg-white">
+      <section id="services-content" className="scroll-mt-24 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (

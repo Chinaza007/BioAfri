@@ -82,10 +82,13 @@ export function ContactPage() {
   return (
     <>
       <PageHero
-        title="Contact"
+        eyebrow="Start The Conversation"
+        title="Contact Us"
+        highlight="Contact"
         description="Start a conversation with BioAfri-Connect to explore advisory, partnership, commercialization, or capacity-building opportunities."
+        scrollTarget="#contact-content"
       />
-      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#f8f5ee_100%)]">
+      <section id="contact-content" className="relative scroll-mt-24 overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#f8f5ee_100%)]">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(216,198,162,0.18),transparent_22%),radial-gradient(circle_at_bottom_left,rgba(9,107,58,0.06),transparent_24%)]" />
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">
           <div className="flex max-w-3xl flex-col gap-4">

@@ -1,18 +1,41 @@
-import { BrandBackdrop } from './BrandBackdrop'
+import { HeroBanner, HeroCopyFrame, heroAccentText } from './HeroBanner'
 
 type PageHeroProps = {
+  eyebrow?: string
   title: string
+  highlight?: string
   description: string
+  scrollTarget?: string
 }
 
-export function PageHero({ title, description }: PageHeroProps) {
+export function PageHero({
+  eyebrow = 'Knowledge To Value',
+  title,
+  highlight,
+  description,
+  scrollTarget,
+}: PageHeroProps) {
+  const highlightIndex = highlight ? title.indexOf(highlight) : -1
+  const titleContent =
+    highlight && highlightIndex >= 0 ? (
+      <>
+        {title.slice(0, highlightIndex)}
+        {heroAccentText(highlight)}
+        {title.slice(highlightIndex + highlight.length)}
+      </>
+    ) : (
+      title
+    )
+
+  const copy = (compact: boolean) => (
+    <HeroCopyFrame compact={compact} eyebrow={eyebrow} title={titleContent} description={description} />
+  )
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-700 to-brand-500 text-white">
-      <BrandBackdrop />
-      <div className="relative z-10 mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-16">
-        <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
-        <p className="mt-4 max-w-3xl text-white/90">{description}</p>
-      </div>
-    </section>
+    <HeroBanner
+      overlay={copy(true)}
+      stacked={copy(false)}
+      scrollTarget={scrollTarget}
+    />
   )
 }
