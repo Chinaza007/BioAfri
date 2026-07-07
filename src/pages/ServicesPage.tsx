@@ -9,7 +9,7 @@ export function ServicesPage() {
     <>
       <PageHero
         title="Services"
-        description="Comprehensive, integrated service offerings across commercialization, agriculture, and human-capital development."
+        description="Comprehensive, integrated service offerings across tech transfer, agri-food systems, and human development consultancy."
       />
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-8">

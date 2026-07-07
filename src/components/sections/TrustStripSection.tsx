@@ -11,7 +11,7 @@ const iconBySignal = {
 
 export function TrustStripSection() {
   return (
-    <section className="relative z-10 -mt-12 scroll-mt-20">
+    <section id="trust" className="relative scroll-mt-24 pt-6 md:scroll-mt-28 md:pt-8 lg:pt-10">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
         <div className="relative overflow-hidden rounded-[30px] border border-brand-100/90 bg-[linear-gradient(180deg,#ffffff_0%,#f6f2e8_100%)] px-6 py-8 shadow-[0_32px_90px_-48px_rgba(3,56,30,0.48)] md:px-8">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(216,198,162,0.22),transparent_24%),radial-gradient(circle_at_bottom_left,rgba(9,107,58,0.08),transparent_28%)]" />

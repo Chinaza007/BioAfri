@@ -54,6 +54,40 @@ export const heroStats = [
   { value: '100%', label: 'Client-Centric Approach' },
 ]
 
+export type SocialLink = {
+  id: 'linkedin' | 'x' | 'facebook' | 'instagram'
+  label: string
+  href: string
+  handle: string
+}
+
+export const socialLinks: SocialLink[] = [
+  {
+    id: 'linkedin',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/bioafri-connect',
+    handle: 'bioafri-connect',
+  },
+  {
+    id: 'x',
+    label: 'X',
+    href: 'https://x.com/bioafri_connect',
+    handle: '@bioafri_connect',
+  },
+  {
+    id: 'facebook',
+    label: 'Facebook',
+    href: 'https://www.facebook.com/bioafri.connect',
+    handle: 'BioAfri-Connect',
+  },
+  {
+    id: 'instagram',
+    label: 'Instagram',
+    href: 'https://www.instagram.com/bioafri_connect',
+    handle: '@bioafri_connect',
+  },
+]
+
 export const trustSignals: TrustSignal[] = [
   {
     id: 'integration',
@@ -124,10 +158,11 @@ export const services: ServiceItem[] = [
     visual: 'commercialization',
     image: editorialImages.indoorPlantLab,
     points: [
-      'IP identification and commercial potential assessment',
-      'Patent and IP strategy development',
-      'Licensing, spin-off structuring, and commercialization support',
-      'Technology scouting, partner matching, and due diligence',
+      'Public-private partnerships (PPPs) and technology brokering',
+      'Regulatory science, biosafety, and product licensing',
+      'Downstream supply chain and seed system scaling',
+      'Last-mile extension, capacity building, and farmer education',
+      'Lifecycle stewardship and quality management systems (QMS)',
     ],
   },
   {
@@ -137,10 +172,11 @@ export const services: ServiceItem[] = [
     visual: 'agriculture',
     image: editorialImages.farmerInField,
     points: [
-      'Agricultural commodity market and supply chain services',
-      'Product development and commercialization lifecycle support',
-      'Project management for agriculture and innovation initiatives',
-      'Actionable research and socio-economic impact insights',
+      'Agriculture and food systems services',
+      'Project management',
+      'Climate-smart business incubation and rural empowerment',
+      'Mechanization and labor-efficiency innovation projects',
+      'Bioenergy, livestock, and One Health integration',
     ],
   },
   {
@@ -150,10 +186,10 @@ export const services: ServiceItem[] = [
     visual: 'training',
     image: editorialImages.advisoryRoundtable,
     points: [
-      'Innovation and entrepreneurship training programs',
-      'IP management and commercialization training',
-      'Leadership and management development',
-      'Digital-age skills development and workforce planning',
+      'Innovation & entrepreneurship training',
+      'IP management & commercialization training',
+      'Leadership & management development',
+      'Skill development for the digital era',
     ],
   },
 ]
@@ -168,18 +204,21 @@ export const coreValues = [
 ]
 
 export const differentiators = [
-  'Integrated approach across legal, technical, and human capital domains',
-  'Deep industry knowledge from academia, research, and commercialization practice',
-  'Results-oriented delivery with measurable value',
-  'Global perspective with local regulatory and market expertise',
+  'Integrated approach: a seamless synergy between legal, technical, and human capital expertise provides comprehensive solutions.',
+  'Deep industry knowledge: experts with experience across technology sectors, academia, and legal domains.',
+  'Results-oriented: committed to delivering tangible outcomes and measurable value for our clients.',
+  'Global perspective with local expertise: operating with an international outlook while adapting to local market nuances and regulatory frameworks.',
+  'Client-centric philosophy: prioritising each client’s unique needs and tailoring services to achieve their specific goals.',
 ]
 
 export const whoWeServe = [
+  'Technology developers',
+  'Large corporations with R&D departments',
   'Startups and spin-off companies',
   'Universities and research institutions',
-  'Large corporations with R&D departments',
-  'Government agencies and public sector organizations',
-  'Investors, venture capital firms, and individual innovators',
+  'Government agencies and public sector organisations',
+  'Investors and venture capital firms',
+  'Individual innovators and entrepreneurs',
 ]
 
 export const boardMembers: LeadershipProfile[] = [
@@ -295,8 +334,8 @@ export const managementTeam: LeadershipProfile[] = [
   {
     id: 'chioma-ekenta',
     name: 'Chioma Joy Ekenta',
-    role: 'Head, Agriculture & Food Systems',
-    cardRole: 'Agriculture',
+    role: 'Head, Human Development Consultancy & Training',
+    cardRole: 'Human Development',
     image: chiomaPortrait,
     imageFit: 'cover',
     imagePosition: 'center 15%',

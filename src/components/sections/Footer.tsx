@@ -1,5 +1,6 @@
 import { ArrowRight, Mail, MessageCircle, Phone } from 'lucide-react'
 import { BrandLogo } from '../ui/BrandLogo'
+import { SocialLinks } from '../ui/SocialLinks'
 import { TransitionLink } from '../ui/TransitionLink'
 
 const quickLinks = [
@@ -30,6 +31,14 @@ const contactChannels = [
     href: 'mailto:info@bioafri-connect.com',
     icon: Mail,
     detail: 'info@bioafri-connect.com',
+    external: false,
+  },
+  
+  {
+    label: 'Call',
+    href: 'tel:+2348023318530',
+    icon: Phone,
+    detail: '+234 802 331 8530',
     external: false,
   },
   {
@@ -97,6 +106,7 @@ export function Footer() {
               Integrated support across legal advisory, innovation commercialization, research,
               agriculture systems, and human-capital development.
             </p>
+            <SocialLinks variant="dark" className="mt-6" />
           </div>
 
           <div>

@@ -2,6 +2,7 @@ import { ArrowRight, Building2, CalendarClock, Mail, MessageCircle, Phone, Prese
 import type { FormEvent } from 'react'
 import { Card } from '../components/ui/Card'
 import { PageHero } from '../components/ui/PageHero'
+import { SocialLinks } from '../components/ui/SocialLinks'
 import { TagPill } from '../components/ui/TagPill'
 import { TransitionLink } from '../components/ui/TransitionLink'
 
@@ -41,6 +42,7 @@ const contactMethods = [
     icon: Mail,
     external: false,
   },
+  
   {
     title: 'Call',
     href: 'tel:+254797066024',
@@ -234,6 +236,15 @@ export function ContactPage() {
                     )
                   })}
                 </div>
+              </div>
+
+              <div className="rounded-[28px] border border-brand-100 bg-[linear-gradient(180deg,#ffffff_0%,#faf8f2_100%)] p-6 shadow-[0_26px_64px_-46px_rgba(3,56,30,0.32)]">
+                <h2 className="text-xl font-semibold text-brand-900">Connect on Social</h2>
+                <p className="mt-3 text-sm leading-7 text-neutral">
+                  Follow BioAfri-Connect for insights, updates, and thought leadership across
+                  innovation, agriculture, and human-capital development.
+                </p>
+                <SocialLinks variant="light" showLabels className="mt-6" />
               </div>
 
               <div className="rounded-[28px] border border-brand-100 bg-white p-6 shadow-[0_24px_58px_-44px_rgba(3,56,30,0.3)]">

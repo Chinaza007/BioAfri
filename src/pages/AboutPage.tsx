@@ -5,9 +5,9 @@ import { ProfileHighlightsSection } from '../components/sections/ProfileHighligh
 import { editorialImages } from '../data/editorialVisuals'
 
 const aboutHighlights = [
-  'Commercialization strategy with cross-functional insight',
-  'Sector fluency spanning innovation, agriculture, and training',
-  'Experienced governance and management leadership across key practice areas',
+  'Integrated support for tech transfer, bioeconomy, and human development',
+  'Sector fluency spanning agriculture, research, and legal advisory',
+  'Proven leadership in commercialization, institutional readiness, and capability building',
 ]
 
 export function AboutPage() {
@@ -20,8 +20,9 @@ export function AboutPage() {
               About BioAfri-Connect
             </h1>
             <p className="mt-4 max-w-2xl text-neutral">
-              Learn about our vision, mission, integrated approach, and the leadership guiding
-              how BioAfri-Connect translates knowledge into measurable impact.
+              Discover our vision, mission, and how BioAfri-Connect integrates agriculture,
+              food systems innovation, legal expertise, research excellence, and human
+              capital development to deliver measurable value.
             </p>
             <div className="mt-8 space-y-3">
               {aboutHighlights.map((item) => (
