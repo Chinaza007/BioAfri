@@ -23,30 +23,34 @@ const contactChannels = [
     label: 'WhatsApp',
     href: 'https://wa.me/2348023318530',
     icon: MessageCircle,
-    detail: 'Quick initial conversation',
+    detail: 'Tap to chat',
     external: true,
+    ariaLabel: 'Open WhatsApp chat with BioAfri-Connect',
   },
   {
     label: 'Email',
     href: 'mailto:info@bioafri-connect.com',
     icon: Mail,
-    detail: 'info@bioafri-connect.com',
+    detail: 'Tap to email',
     external: false,
+    ariaLabel: 'Send an email to BioAfri-Connect',
   },
-  
+
   {
     label: 'Call',
     href: 'tel:+2348023318530',
     icon: Phone,
-    detail: '+234 802 331 8530',
+    detail: 'Tap to call',
     external: false,
+    ariaLabel: 'Call BioAfri-Connect on +234 802 331 8530',
   },
   {
     label: 'Call',
     href: 'tel:+254797066024',
     icon: Phone,
-    detail: '+254 (797) 066 024',
+    detail: 'Tap to call',
     external: false,
+    ariaLabel: 'Call BioAfri-Connect on +254 797 066 024',
   },
 ]
 
@@ -155,6 +159,8 @@ export function Footer() {
                     href={channel.href}
                     target={channel.external ? '_blank' : undefined}
                     rel={channel.external ? 'noreferrer' : undefined}
+                    aria-label={channel.ariaLabel || channel.label}
+                    title={channel.ariaLabel || channel.label}
                     className="group flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 transition-all duration-300 hover:border-brand-300/35 hover:bg-white/[0.05]"
                   >
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-brand-100">

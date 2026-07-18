@@ -6,12 +6,18 @@ import { HeroBanner, HeroCopyFrame, heroAccentText } from '../ui/HeroBanner'
 function HeroStats({ className = '' }: { className?: string }) {
   return (
     <div
-      className={`rounded-2xl border border-brand-100/90 bg-white/85 px-5 py-4 shadow-[0_16px_48px_-32px_rgba(3,56,30,0.18)] backdrop-blur-sm sm:px-6 sm:py-5 ${className}`}
+      className={`overflow-hidden rounded-[24px] border border-brand-100/90 bg-[linear-gradient(135deg,rgba(255,255,255,0.95)_0%,rgba(246,250,247,0.97)_100%)] px-5 py-4 shadow-[0_20px_60px_-36px_rgba(3,56,30,0.35)] backdrop-blur-sm sm:px-6 sm:py-5 ${className}`}
     >
-      <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-600/80">
-        Trusted Growth Partner
-      </p>
-      <div className="mt-3 grid gap-4 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-brand-100/80 pb-3">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-600/80">
+          Trusted Growth Partner
+        </p>
+        <div className="flex items-center gap-2 rounded-full border border-brand-200/80 bg-white/75 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-700">
+          <span className="h-2 w-2 animate-pulse rounded-full bg-brand-600" />
+          Rapid advisory support
+        </div>
+      </div>
+      <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:gap-6">
         {heroStats.map((item, index) => (
           <div
             key={item.label}

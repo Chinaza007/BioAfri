@@ -31,24 +31,27 @@ const contactMethods = [
   {
     title: 'WhatsApp',
     href: 'https://wa.me/2348023318530',
-    label: 'Reach us quickly for direct conversation.',
+    label: 'Tap to chat',
     icon: MessageCircle,
     external: true,
+    ariaLabel: 'Open WhatsApp chat with BioAfri-Connect',
   },
   {
     title: 'Email',
     href: 'mailto:info@bioafri-connect.com',
-    label: 'info@bioafri-connect.com',
+    label: 'Tap to email',
     icon: Mail,
     external: false,
+    ariaLabel: 'Send an email to BioAfri-Connect',
   },
-  
+
   {
     title: 'Call',
     href: 'tel:+254797066024',
-    label: '+254 (797) 066 024',
+    label: 'Tap to call',
     icon: Phone,
     external: false,
+    ariaLabel: 'Call BioAfri-Connect on +254 797 066 024',
   },
 ]
 
@@ -226,6 +229,8 @@ export function ContactPage() {
                         href={method.href}
                         target={method.external ? '_blank' : undefined}
                         rel={method.external ? 'noreferrer' : undefined}
+                        aria-label={method.ariaLabel || method.title}
+                        title={method.ariaLabel || method.title}
                         className="group flex items-start gap-4 rounded-2xl border border-brand-100 bg-white px-4 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-[0_18px_36px_-28px_rgba(3,56,30,0.3)]"
                       >
                         <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-100 via-white to-[#f7eedb] text-brand-700">

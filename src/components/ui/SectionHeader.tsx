@@ -12,9 +12,11 @@ export function SectionHeader({ title, description, tag, centered = false }: Sec
   return (
     <div className={centered ? 'text-center' : ''}>
       {tag ? <TagPill className="mb-4">{tag}</TagPill> : null}
-      <h2 className="text-4xl font-bold text-slate-900 md:text-5xl">{title}</h2>
+      <h2 className="font-display text-4xl font-semibold tracking-[0.01em] text-slate-900 md:text-5xl">
+        {title}
+      </h2>
       {description ? (
-        <p className={`mt-4 text-neutral ${centered ? 'mx-auto max-w-3xl' : 'max-w-3xl'}`}>
+        <p className={`mt-4 max-w-3xl text-base leading-8 text-neutral ${centered ? 'mx-auto' : ''}`}>
           {description}
         </p>
       ) : null}

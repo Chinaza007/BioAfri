@@ -48,8 +48,8 @@ export function Navbar() {
   }, [activeHref])
 
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-100 bg-white shadow-[0_22px_48px_-40px_rgba(3,56,30,0.4)]">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8">
+    <header className="sticky top-0 z-40 border-b border-brand-100/80 bg-white/90 shadow-[0_24px_54px_-38px_rgba(3,56,30,0.42)] backdrop-blur-sm">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8 lg:py-4">
         <TransitionLink
           to="/"
           onClick={() => setIsOpen(false)}
@@ -70,7 +70,7 @@ export function Navbar() {
           <nav
             ref={navRef}
             aria-label="Primary navigation"
-            className="relative flex items-center gap-1 rounded-full border border-brand-100 bg-[#faf8f2] p-1 shadow-[0_18px_40px_-30px_rgba(3,56,30,0.34)]"
+            className="relative flex items-center gap-1 rounded-full border border-brand-100/80 bg-[#faf8f2] p-1 shadow-[0_18px_40px_-30px_rgba(3,56,30,0.34)]"
           >
             <span
               aria-hidden="true"
