@@ -167,7 +167,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: 'agriculture-food-systems',
-    title: 'Agriculture and Food Systems',
+    title: 'Bio-Economy, Agri-Food Systems and Climate Change',
     icon: 'AG',
     visual: 'agriculture',
     image: editorialImages.farmerInField,
@@ -181,7 +181,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: 'human-development-training',
-    title: 'Human Development Consultancy & Training',
+    title: 'Human Capital Development Consultancy & Training',
     icon: 'HD',
     visual: 'training',
     image: editorialImages.advisoryRoundtable,

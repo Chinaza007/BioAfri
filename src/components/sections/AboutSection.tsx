@@ -74,9 +74,9 @@ export function AboutSection() {
             <Card>
               <h3 className="font-semibold text-brand-800">Core Service Areas</h3>
               <ul className="mt-4 space-y-2 text-sm text-neutral">
-                <li>Tech transfer & innovation commercialization services</li>
-                <li>Bio-economy, agri-food systems and climate change</li>
-                <li>Human development consultancy & training</li>
+                <li>Tech Transfer & Innovation Commercialization</li>
+                <li>Bio-Economy, Agri-Food Systems and Climate Change</li>
+                <li>Human Capital Development Consultancy & Training</li>
               </ul>
             </Card>
           </div>
