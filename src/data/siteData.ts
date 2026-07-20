@@ -373,8 +373,8 @@ export const managementTeam: LeadershipProfile[] = [
   {
     id: 'akan-iwatt',
     name: 'Akaninyene (Akan) Iwatt, FCA',
-    role: 'Head, Finance',
-    cardRole: 'Finance',
+    role: 'Board Advisor, Finance',
+    cardRole: 'Board Advisor, Finance',
     image: akanPortrait,
     imageFit: 'contain',
     imagePosition: 'center 52%',
