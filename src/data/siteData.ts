@@ -77,13 +77,13 @@ export const socialLinks: SocialLink[] = [
   {
     id: 'facebook',
     label: 'Facebook',
-    href: 'https://www.facebook.com/bioafri.connect',
+    href: 'https://www.facebook.com/profile.php?id=61592042704825',
     handle: 'BioAfri-Connect',
   },
   {
     id: 'instagram',
     label: 'Instagram',
-    href: 'https://www.instagram.com/bioafri_connect',
+    href: 'https://www.instagram.com/concykatchy/',
     handle: '@bioafri_connect',
   },
 ]
