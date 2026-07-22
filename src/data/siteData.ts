@@ -83,7 +83,7 @@ export const socialLinks: SocialLink[] = [
   {
     id: 'instagram',
     label: 'Instagram',
-    href: 'https://www.instagram.com/bioafriconnect.com',
+    href: 'https://www.instagram.com/bioafriconnect/',
     handle: '@bioafri_connect',
   },
 ]
