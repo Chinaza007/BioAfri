@@ -55,7 +55,7 @@ export const heroStats = [
 ]
 
 export type SocialLink = {
-  id: 'linkedin' | 'x' | 'facebook' | 'instagram'
+  id: 'linkedin' | 'x' | 'facebook'
   label: string
   href: string
   handle: string
@@ -79,12 +79,6 @@ export const socialLinks: SocialLink[] = [
     label: 'Facebook',
     href: 'https://www.facebook.com/profile.php?id=61592042704825',
     handle: 'BioAfri-Connect',
-  },
-  {
-    id: 'instagram',
-    label: 'Instagram',
-    href: 'https://www.instagram.com/bioafriconnect/',
-    handle: '@bioafri_connect',
   },
 ]
 
@@ -294,7 +288,7 @@ export const managementTeam: LeadershipProfile[] = [
   {
     id: 'issoufou-abdourhamane',
     name: 'Dr. Issoufou Kollo Abdourhamane',
-    role: 'Head, Bioeconomy, Agrifood Systems and Climate Change',
+    role: 'Head, Bio-Economy, Agri-Food Systems and Climate Change',
     cardRole: 'Bioeconomy',
     image: kolloPortrait,
     imageFit: 'cover',
@@ -304,12 +298,12 @@ export const managementTeam: LeadershipProfile[] = [
       'Dr. Issoufou is an agricultural scientist and international development expert with over 35 years of experience leading agricultural innovation, climate-resilient food systems, biotechnology, and regional agri-food transformation programmes across Africa.',
     expertise: [
       'Bioeconomy strategy',
-      'Climate-resilient agrifood systems',
+      'Climate-resilient agri-food systems',
       'Agricultural biotechnology',
     ],
     biography: [
-      'Dr. Issoufou Kollo Abdourhamane is a distinguished agricultural scientist, research executive, and international development leader with more than 35 years of experience pioneering bioeconomy strategies, climate-resilient agrifood systems, and sustainable agricultural transformation across Africa. His career is defined by an ability to leverage agricultural biotechnology, advanced plant health systems, and innovative seed systems to strengthen food security, rural livelihoods, and environmental resilience on a continental scale.',
-      'An expert in navigating complex regulatory, scientific, and political landscapes, Dr. Abdourhamane has successfully directed multi-country research-for-development initiatives funded by major international donors, including USAID, the World Bank, the African Development Bank, and the Rockefeller Foundation. Notably, during his tenure as West Africa Representative and Project Manager for the African Agricultural Technology Foundation (AATF), he orchestrated the landmark Bt Cowpea Project across Nigeria, Ghana, and Burkina Faso. His strategic leadership was instrumental in achieving the historic regulatory approval and commercialisation of the pod borer-resistant (PBR) cowpea in Nigeria, a breakthrough that significantly reduced pesticide dependence, enhanced smallholder climate resilience, and transformed regional agrifood dynamics.',
+      'Dr. Issoufou Kollo Abdourhamane is a distinguished agricultural scientist, research executive, and international development leader with more than 35 years of experience pioneering bioeconomy strategies, climate-resilient agri-food systems, and sustainable agricultural transformation across Africa. His career is defined by an ability to leverage agricultural biotechnology, advanced plant health systems, and innovative seed systems to strengthen food security, rural livelihoods, and environmental resilience on a continental scale.',
+      'An expert in navigating complex regulatory, scientific, and political landscapes, Dr. Abdourhamane has successfully directed multi-country research-for-development initiatives funded by major international donors, including USAID, the World Bank, the African Development Bank, and the Rockefeller Foundation. Notably, during his tenure as West Africa Representative and Project Manager for the African Agricultural Technology Foundation (AATF), he orchestrated the landmark Bt Cowpea Project across Nigeria, Ghana, and Burkina Faso. His strategic leadership was instrumental in achieving the historic regulatory approval and commercialisation of the pod borer-resistant (PBR) cowpea in Nigeria, a breakthrough that significantly reduced pesticide dependence, enhanced smallholder climate resilience, and transformed regional agri-food dynamics.',
       'Dr. Abdourhamane holds a PhD in Phytopathology and Microbiology from Texas A&M University, with advanced specialisations in epidemiology, plant diagnostics, biotechnology, and statistical modelling. His extensive leadership background spans international agricultural research centers, regional organisations, and academic institutions, positioning him as a premier authority on driving science-based, climate-smart bioeconomies.',
     ],
   },

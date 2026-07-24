@@ -14,7 +14,7 @@ const quickLinks = [
 const focusAreas = [
   'Innovation commercialization',
   'Institutional advisory',
-  'Agriculture systems',
+  'Agri-food Systems',
   'Human-capital development',
 ]
 
@@ -108,7 +108,7 @@ export function Footer() {
             </div>
             <p className="mt-5 max-w-sm text-sm leading-7 text-white/72">
               Integrated support across legal advisory, innovation commercialization, research,
-              agriculture systems, and human-capital development.
+              agri-food systems, and human-capital development.
             </p>
             <SocialLinks variant="dark" className="mt-6" />
           </div>
