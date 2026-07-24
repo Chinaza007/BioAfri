@@ -60,7 +60,7 @@ const themes: Record<EditorialVisualVariant, EditorialVisualTheme> = {
     metrics: ['IP', 'Deals', 'Scale'],
   },
   agriculture: {
-    badge: 'Agri-Innovation',
+    badge: 'Agri-Foods systems',
     shellClassName: 'from-brand-900 via-brand-700 to-brand-400',
     glowPrimaryClassName: 'bg-brand-100/20',
     glowSecondaryClassName: 'bg-accent/25',
