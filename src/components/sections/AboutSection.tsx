@@ -14,7 +14,7 @@ export function AboutSection() {
         <SectionHeader
           tag="Company Profile"
           title={<span className="text-brand-700">BioAfri-Connect LLC</span>}
-          description="BioAfri-Connect is a dynamic and multifaceted firm at the nexus of agriculture and food systems tech-innovation, legal expertise, research excellence, and human potential. We empower organisations and individuals to navigate the complexities of the modern knowledge economy, driving growth, fostering innovation, and maximizing their impact."
+          description="BioAfri-Connect is a dynamic and multifaceted firm at the nexus of agri-food systems, legal expertise, research excellence, and human potential. We empower organisations and individuals to navigate the complexities of the modern knowledge economy, driving growth, fostering innovation, and maximizing their impact."
         />
         <div className="mt-10 grid gap-6 xl:grid-cols-[1.35fr_0.85fr]">
           <div className="space-y-6 rounded-[28px] border border-brand-100 bg-white/90 p-8 shadow-sm">

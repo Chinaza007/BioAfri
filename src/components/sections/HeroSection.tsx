@@ -48,7 +48,7 @@ function HeroCopy({ compact = false }: { compact?: boolean }) {
           Where Innovation Meets {heroAccentText('Strategic Growth')}
         </>
       }
-      description="BioAfri-Connect empowers organisations and individuals to navigate the knowledge economy through tech transfer, legal advisory, agri-innovation, and human capital development."
+      description="BioAfri-Connect empowers organisations and individuals to navigate the knowledge economy through tech transfer, legal advisory, agri-food systems, and human capital development."
     >
       <div
         className={`flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 ${
